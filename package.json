@@ -1,0 +1,16 @@
+{
+  "name": "alientothai",
+  "version": "1.0.0",
+  "description": "Translate Thai that type in english to Readable Thai",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js"
+  },
+  "keywords": [
+    "translate",
+    "thai",
+    "forgor"
+  ],
+  "author": "Rinme",
+  "license": "MIT"
+}
