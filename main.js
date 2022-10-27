@@ -1,9 +1,13 @@
-var meow = require("./keys.json"); //Import Json
+var meow = require("./settings.json"); //Import Json
 const readline = require("readline"); // Import Readline for asking question
 const rl = readline.createInterface({ 
   input: process.stdin, // Input
   output: process.stdout, // Output
 });
+
+console.log("Welcome!")
+console.log(`Keymap: ${meow.Keymap}`)
+console.log(`Purpose: ${meow.Description}`)
 
 function compare(input) { // Input Function
   var oldConvert = ""; // I Placed here to avoid "undefined"
