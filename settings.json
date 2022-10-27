@@ -1,4 +1,6 @@
 {
+  "Keymap": "Qwerty",
+  "Description": "Transalte for peoples forget to change thier language and keeps typing in English",
   "keys": {
     "1": "ๅ",
     "2": "/",
