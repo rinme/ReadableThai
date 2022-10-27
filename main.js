@@ -17,9 +17,9 @@ function compare(input) {
     //console.log(chr, th);
     //console.log(Final);
   }
-  console.log(Spelling);
+  console.log(`Tanslated: ${Spelling}`);
 }
 
-rl.question("meow? ", function (input) {
+rl.question(": ", function (input) {
   compare(`${input}`);
 });
