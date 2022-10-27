@@ -1,11 +1,20 @@
 {
   "name": "alientothai",
-  "bin": "main.js",
+  "bin": "src/main.js",
   "version": "1.0.0",
   "description": "Translate Thai that type in english to Readable Thai",
-  "main": "main.js",
+  "main": "src/main.js",
   "scripts": {
-    "test": "node main.js"
+    "build": "pkg .",
+    "test": "node src/main.js"
+  },
+  "pkg": {
+    "assets": [
+      "src/*"
+    ],
+    "targets": [
+      "node18-win-x64"
+    ]
   },
   "keywords": [
     "translate",
