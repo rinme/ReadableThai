@@ -1,15 +1,18 @@
 var meow = require("./settings.json"); //Import Json
 const readline = require("readline"); // Import Readline for asking question
-const rl = readline.createInterface({ 
+const rl = readline.createInterface({
   input: process.stdin, // Input
   output: process.stdout, // Output
 });
 
-console.log("Welcome!")
-console.log(`Keymap: ${meow.Keymap}`)
-console.log(`Purpose: ${meow.Description}`)
+console.log("Welcome!", process.version);
+console.log(`Keymap: ${meow.Keymap}`);
+console.log(`Purpose: ${meow.Description}`);
+console.log("Press Ctrl+C to exit");
+ask();
 
-function compare(input) { // Input Function
+function compare(input) {
+  // Input Function
   var oldConvert = ""; // I Placed here to avoid "undefined"
   for (var i = 0; i < input.length; i++) {
     Extract = input[i]; // Extract Input to each keys
@@ -22,8 +25,10 @@ function compare(input) { // Input Function
     //console.log(Final);
   }
   console.log(`Tanslated: ${Spelling}`);
+  ask();
 }
-
-rl.question(": ", function (input) {
-  compare(`${input}`);
-});
+function ask() {
+  rl.question(": ", function (input) {
+    compare(`${input}`);
+  });
+}
